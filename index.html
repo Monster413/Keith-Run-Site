@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HoRunShio</title>
+<title>Keith's Run Tracker</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -187,18 +187,11 @@ tbody tr,.lcard{animation:fadeUp .3s ease both}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
 <script>
 const RAW=[
-  {n:"Turkey Trot 2023",                  d:"11/23/2023",km:10.0,t:"1:45:14"},
-  {n:"Turkey Trot 2024",                  d:"11/28/2024",km:10.0,t:"1:36:42"},
-  {n:"Santa Monica-Venice Xmas Run 2024", d:"12/14/2024",km:10.0,t:"1:35:04"},
-  {n:"LA Chinatown Firecracker 2025",     d:"03/08/2025",km:10.0,t:"1:26:01"},
-  {n:"Santa Barbara Wine Country 2025",   d:"05/10/2025",km:21.1,t:"3:22:28"},
-  {n:"Santa Monica Classic 2025",         d:"09/07/2025",km:10.0,t:"1:33:57"},
-  {n:"Surf City 10K 2025",                d:"09/14/2025",km:10.0,t:"1:28:22"},
-  {n:"LA Dodgers Foundation Run",         d:"09/27/2025",km:10.0,t:"1:36:54"},
-  {n:"Malibu Run",                        d:"11/16/2025",km:21.1,t:"3:28:10"},
-  {n:"Turkey Trot 2025",                  d:"11/27/2025",km:10.0,t:"1:40:46"},
-  {n:"Santa Monica-Venice Xmas Run 2025", d:"12/13/2025",km:10.0,t:"1:29:17"},
-  {n:"LA Chinatown Firecracker 2026",     d:"03/01/2026",km:10.0,t:"1:37:24"},
+  {n:"Turkey Trot 2024",                  d:"11/28/2024",km:10.0,t:"1:58:24"},
+  {n:"LA Dodgers Foundation Run",         d:"09/27/2025",km:10.0,t:"1:44:35"},
+  {n:"Turkey Trot 2025",                  d:"11/27/2025",km:10.0,t:"1:41:25"},
+  {n:"Santa Monica-Venice Xmas Run 2025", d:"12/13/2025",km:10.0,t:"1:34:14"},
+  {n:"LA Chinatown Firecracker 2026",     d:"03/01/2026",km:10.0,t:"1:35:48"},
 ];
 const KMI=0.621371;
 const ps=t=>{const p=t.split(':').map(Number);return p[0]*3600+p[1]*60+(p[2]||0)};
